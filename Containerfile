@@ -5,6 +5,9 @@ COPY build_files /
 # Base Image
 FROM ghcr.io/ublue-os/base-main:latest
 
+# Copy system files to image
+COPY system_files /
+
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
